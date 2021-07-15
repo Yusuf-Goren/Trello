@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="left">
+    <button mat-icon-button class="example-icon favorite-icon">
+      <img src="assets/photos/trellosm.png" alt="" />
+      <span>Boards</span>
+    </button>
+    <div class="searchbox">
+      <input type="text" />
+      <mat-icon>search</mat-icon>
+    </div>
+  </div>
+  <div class="inner">
+    <img src="assets/photos/Trello.png" class="trellopic" alt="" />
+  </div>
+  <div class="right">
+    <button mat-icon-button class="example-icon">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon">
+      <mat-icon>info</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon">
+      <mat-icon (click)="onClickAlert(alertIcon)">{{ alertIcon }}</mat-icon>
+    </button>
+    <img src="assets/photos/profilepic2.jpg" alt="Avatar" class="avatar" />
+  </div>
+</div>

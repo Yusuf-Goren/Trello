@@ -1,0 +1,38 @@
+.post {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  display: flex;
+}
+.postscontainer {
+  display: flex;
+}
+
+.postswrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 10px 10px 10px;
+  margin-left: 10px;
+  background-color: rgb(218, 218, 218);
+  border-radius: 5px;
+  max-height: 50%;
+}
+
+.posts {
+  max-height: 75vh;
+  overflow-y: auto;
+}
+.addCard {
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.postsheader {
+  padding-left: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

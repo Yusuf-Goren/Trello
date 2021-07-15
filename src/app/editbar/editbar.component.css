@@ -1,0 +1,89 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.container {
+  background-color: rgb(38, 174, 253);
+  height: 93%;
+  overflow-y: hidden;
+}
+
+.editor {
+  display: flex;
+  justify-content: space-between;
+}
+.edit-left {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  margin: 16px 0 16px 16px;
+}
+h2 {
+  margin: 16px 16px 16px 16px;
+  font-size: 18px;
+}
+mat-icon {
+  cursor: pointer;
+  margin: 16px 0 16px 16px;
+}
+mat-icon:hover {
+  color: grey;
+}
+
+.brace {
+  margin: 16px 0 16px 16px;
+  height: 22px;
+  width: 2px;
+  border-radius: 10px;
+  background-color: white;
+}
+.bc {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(52, 116, 255);
+  border-radius: 10px;
+  height: 18px;
+  margin: 8px 0 8px 8px;
+  padding: 2px;
+  width: 25px;
+}
+img {
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: inherit;
+}
+.stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 16px 16px 16px;
+  list-style: none;
+}
+
+.edit-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+}
+
+mat-label {
+  color: white;
+}
+@media screen and (max-width: 1050px) {
+  .edit-right,
+  .stories {
+    display: none;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+}

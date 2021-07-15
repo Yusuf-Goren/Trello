@@ -1,0 +1,99 @@
+<div class="postscontainer">
+  <div class="columns"></div>
+  <div class="postswrapper">
+    <div class="postsheader">
+      <h2>Content Ideas</h2>
+      <mat-icon>more_horiz</mat-icon>
+    </div>
+    <div class="posts">
+      <div *ngFor="let text of cTexts" class="post">
+        <app-post
+          [text]="text.text"
+          [likeNum]="text.likeNum"
+          [commentNum]="text.commentNum"
+        ></app-post>
+      </div>
+    </div>
+    <div class="addCard">
+      <input type="text" placeholder="Add a Card" [formControl]="name" />
+      <button type="submit" (click)="addCtext(name)">Add</button>
+    </div>
+  </div>
+
+  <div class="postswrapper" style="height: calc(18vh * 3)">
+    <div class="postsheader">
+      <h2>Pipeline</h2>
+      <mat-icon>more_horiz</mat-icon>
+    </div>
+    <div class="posts">
+      <div *ngFor="let text of pTexts" class="post">
+        <app-post
+          [text]="text.text"
+          [likeNum]="text.likeNum"
+          [commentNum]="text.commentNum"
+        ></app-post>
+      </div>
+    </div>
+    <div class="addCard">
+      <input type="text" placeholder="Add a Card" [formControl]="name" />
+      <button type="submit" (click)="addPtext()">Add</button>
+    </div>
+  </div>
+  <div class="postswrapper" style="height: calc(18vh * 4)">
+    <div class="postsheader">
+      <h2>Content to Relaunch</h2>
+      <mat-icon>more_horiz</mat-icon>
+    </div>
+    <div class="posts">
+      <div *ngFor="let text of rTexts" class="post">
+        <app-post
+          [text]="text.text"
+          [likeNum]="text.likeNum"
+          [commentNum]="text.commentNum"
+        ></app-post>
+      </div>
+    </div>
+    <div class="addCard">
+      <input type="text" placeholder="Add a Card" [formControl]="name" />
+      <button type="submit" (click)="addRtext()">Add</button>
+    </div>
+  </div>
+  <div class="postswrapper" style="height: calc(15vh * 3)">
+    <div class="postsheader">
+      <h2>InProgress</h2>
+      <mat-icon>more_horiz</mat-icon>
+    </div>
+    <div class="posts">
+      <div *ngFor="let text of iTexts" class="post">
+        <app-post
+          [text]="text.text"
+          [likeNum]="text.likeNum"
+          [commentNum]="text.commentNum"
+        ></app-post>
+      </div>
+    </div>
+    <div class="addCard">
+      <input type="text" placeholder="Add a Card" [formControl]="name" />
+      <button type="submit" (click)="addItext()">Add</button>
+    </div>
+  </div>
+  <div class="postswrapper" style="height: calc(16vh * 4)">
+    <div class="postsheader">
+      <h2>Editing</h2>
+      <mat-icon>more_horiz</mat-icon>
+    </div>
+    <div class="posts">
+      <div *ngFor="let text of eTexts" class="post">
+        <app-post
+          [text]="text.text"
+          [likeNum]="text.likeNum"
+          [commentNum]="text.commentNum"
+        ></app-post>
+      </div>
+    </div>
+    <div class="addCard">
+      <input type="text" placeholder="Add a Card" [formControl]="name" />
+      <button type="submit" (click)="addEtext()">Add</button>
+    </div>
+  </div>
+</div>

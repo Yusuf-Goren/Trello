@@ -1,0 +1,19 @@
+<mat-card class="card">
+  <div class="boxes">
+    <div class="box"></div>
+    <div class="box yellow"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+  </div>
+  <mat-card-content>
+    <p>
+      {{ text }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <mat-icon (click)="onClickThumb(thumb)">{{ thumb }}</mat-icon>
+    {{ likeNum }}
+    <mat-icon (click)="onClickComment(comment)"> {{ comment }}</mat-icon>
+    {{ commentNum }}
+  </mat-card-actions>
+</mat-card>
